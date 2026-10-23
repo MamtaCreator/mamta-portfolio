@@ -126,12 +126,12 @@ export const CtaBand = () => (
 export const About = () => (
   <section className="gutter" id="about"><div className="wrap about">
     <div className="pics reveal">
-      <div className="p1"><img src={event} alt="Mamta at an evening event" /></div>
-      <div className="p2"><img src={cutout} alt="Mamta, studio portrait" /></div>
+      <div className="p1"><img src={event} alt="Mamta Yadav, website developer and AI engineer, at an event" /></div>
+      <div className="p2"><img src={cutout} alt="Mamta Yadav, studio portrait" /></div>
     </div>
     <div className="about-copy">
       <span className="bar" /><h2 className="h2">about me</h2>
-      <p>I started as a fullstack developer on Angular, C#/.NET and Azure, then moved into machine learning and NLP. Today I combine both: I build Gen AI and agentic systems that live inside real products, not demos.</p>
+      <p>I started as a fullstack developer on Angular, C#/.NET and Azure, then moved into machine learning and NLP. Today I combine both: I work as a freelance website developer and designer, and I build Gen AI, LLM and agentic AI systems that live inside real products, not demos.</p>
       <p>I also write about software design on Medium, explaining patterns in plain language with real-world examples.</p>
       <div className="facts">
         <div><b>3</b><span>disciplines: ai, backend, frontend</span></div>
@@ -208,7 +208,7 @@ export const Footer = () => (
         <li><a href={profile.medium} {...ext}>medium</a></li><li><a href={profile.whatsapp} {...ext}>whatsapp</a></li>
       </ul></div>
     </div>
-    <div className="copy">copyright © {new Date().getFullYear()} mamta</div>
+    <div className="copy">copyright © {new Date().getFullYear()} mamta yadav · freelance website developer &amp; ai agent engineer</div>
   </div></footer>
 );
 

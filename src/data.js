@@ -14,7 +14,7 @@ export const profile = {
 export const expertise = [
   { art: 'agents', title: 'agentic ai systems', text: 'Multi-step agents that plan, call tools and APIs, keep memory and check their own work, with a human in the loop where it matters.' },
   { art: 'genai', title: 'gen ai & llm apps', text: 'RAG over company documents, chat assistants, content and report generation, prompt design and evaluation.' },
-  { art: 'fullstack', title: 'fullstack engineering', text: 'Clean-architecture .NET 8 APIs with Angular and React frontends, and fast, 3D-rich websites for every screen.' },
+  { art: 'fullstack', title: 'website design & development', text: 'Fast, SEO-ready business websites and fullstack web apps: clean-architecture .NET 8 APIs with Angular and React frontends, 3D-rich design for every screen.' },
   { art: 'automation', title: 'cloud & automation', text: 'Azure deployment, CI/CD and monitoring, plus WhatsApp and email automations that capture and answer leads.' },
 ];
 
