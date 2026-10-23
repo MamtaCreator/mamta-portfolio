@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mamtacreator.github.io/mamta-portfolio/sitemap.xml
+Sitemap: https://mamtayadav.in/sitemap.xml
