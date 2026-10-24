@@ -8,7 +8,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/mamta-yadav-buildsystems/',
   medium: 'https://medium.com/@mamta.ya26',
   // WhatsApp lead link (country code 91 + number)
-  whatsapp: `https://wa.me/919987200797?text=${WA_TEXT}`,
+  whatsapp: `https://wa.me/919175817797?text=${WA_TEXT}`,
 };
 
 export const expertise = [
