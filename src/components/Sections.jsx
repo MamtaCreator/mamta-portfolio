@@ -78,6 +78,10 @@ export const Stack = () => (
   </div></section>
 );
 
+const Loc = ({ place }) => place ? (
+  <span className="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>{place}</span>
+) : null;
+
 export const Portfolio = () => (
   <section className="gutter" id="portfolio"><div className="wrap">
     <Head title="my portfolio"><p>AI platforms, automation and machine learning work, from client builds to research projects.</p></Head>
@@ -86,7 +90,7 @@ export const Portfolio = () => (
         <article className={'pfeat reveal' + (p.flip ? ' flip' : '')} key={p.title}>
           <div className="art"><ProjectArt kind={p.art} /></div>
           <div className="info">
-            <span className="pill">{p.tag}</span><h3>{p.title}</h3><p>{p.text}</p>
+            <span className="pill">{p.tag}</span><h3>{p.title}</h3><Loc place={p.location} /><p>{p.text}</p>
             {p.link ? <More {...p.link} /> : <More href="#contact" label="discuss a similar project" />}
           </div>
         </article>
@@ -94,7 +98,7 @@ export const Portfolio = () => (
         <article className="pcard reveal" key={p.title}>
           <div className="art"><ProjectArt kind={p.art} /><span className="pill">{p.tag}</span></div>
           <div className="txt">
-            <h3>{p.title}</h3><p>{p.text}</p>
+            <h3>{p.title}</h3><Loc place={p.location} /><p>{p.text}</p>
             {p.link ? <More href={p.link.href} label={p.link.label} /> : <More href="#contact" label="discuss a similar project" />}
           </div>
         </article>

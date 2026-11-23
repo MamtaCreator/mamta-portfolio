@@ -126,6 +126,8 @@ section{padding-block:110px}
 .pfeat.flip .info{left:auto;right:40px}
 .info h3,.pcard h3{font-size:28px;line-height:1.3;margin:20px 0 12px}
 .info p,.pcard p{margin:0 0 22px;font-size:17px}
+.loc{display:inline-flex;align-items:center;gap:6px;margin:-2px 0 14px;font-size:14px;font-weight:600;color:var(--body)}
+.loc svg{width:16px;height:16px;color:var(--accent)}
 .more{display:inline-flex;align-items:center;gap:12px;font-weight:600;color:var(--accent);text-decoration:none;text-transform:lowercase}
 .more i{width:34px;height:34px;border-radius:10px;background:var(--lav-2);display:grid;place-items:center;transition:background .2s,color .2s}
 .more:hover i{background:var(--accent);color:#fff}

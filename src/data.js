@@ -29,11 +29,28 @@ export const stack = [
 ];
 
 // layout: 'feature' = wide card with overlay, 'card' = half-width card
+// location (optional) shows a pin tag for client projects
 export const projects = [
   {
     layout: 'feature', art: 'dashboard', tag: 'ai-powered bi platform',
     title: 'nous estrategia consulting platform',
     text: '360° company assessments, executive dashboards, KPIs and reports across finance, marketing and operations, with an AI automation module. .NET 8, Angular, SQL Server, Azure.',
+    location: 'Bogotá, Colombia',
+    link: { href: 'https://nousestrategia.com/', label: 'visit nousestrategia.com' },
+  },
+  {
+    layout: 'card', art: 'security', tag: 'identity & security',
+    title: 'authx identity platform',
+    text: 'Work on AuthX, a passwordless identity and access management (IAM) product covering single sign-on, multi-factor authentication and zero-trust access.',
+    location: 'India',
+    link: { href: 'https://www.authx.com/', label: 'visit authx.com' },
+  },
+  {
+    layout: 'card', art: 'shop', tag: 'e-commerce',
+    title: 'grovekart online store',
+    text: 'E-commerce website for Grovekart: storefront, product catalogue and a fast, mobile-first shopping experience.',
+    location: 'India',
+    link: { href: 'https://grovekart.com/', label: 'visit grovekart.com' },
   },
   {
     layout: 'card', art: 'leads', tag: 'lead automation',

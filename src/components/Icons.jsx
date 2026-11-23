@@ -64,6 +64,32 @@ export const ProjectArt = ({ kind }) => {
       <rect x="390" y="220" width="200" height="90" rx="22" fill={W}/><circle cx="430" cy="265" r="20" fill={P}/><rect x="462" y="250" width="100" height="10" rx="5" fill={L}/><rect x="462" y="270" width="70" height="8" rx="4" fill="#EDECF5"/>
       <path d="M360 200h30" stroke={P} strokeWidth="4" strokeDasharray="6 6"/>
     </svg>);
+  if (kind === 'security') return (
+    <svg viewBox="0 0 640 400" aria-hidden="true">
+      <rect x="60" y="50" width="300" height="300" rx="28" fill={W}/>
+      <circle cx="210" cy="120" r="34" fill="#F5F2FF"/><circle cx="210" cy="112" r="12" fill={P}/><path d="M188 138q22-20 44 0" fill={P}/>
+      <rect x="100" y="178" width="220" height="40" rx="14" fill="#F5F2FF"/><rect x="118" y="194" width="90" height="8" rx="4" fill={L}/>
+      <rect x="100" y="230" width="220" height="40" rx="14" fill="#F5F2FF"/>{[0,1,2,3,4,5].map(k=><circle key={k} cx={124+k*22} cy="250" r="5" fill={P2}/>)}
+      <rect x="100" y="286" width="220" height="40" rx="14" fill={P}/><rect x="170" y="302" width="80" height="8" rx="4" fill={W}/>
+      <path d="M490 70l100 36v84c0 70-48 116-100 138-52-22-100-68-100-138v-84z" fill={P}/>
+      <path d="M490 104l66 24v62c0 46-30 78-66 94-36-16-66-48-66-94v-62z" fill={P2}/>
+      <rect x="462" y="190" width="56" height="46" rx="10" fill={W}/><path d="M472 190v-14a18 18 0 0 1 36 0v14" fill="none" stroke={W} strokeWidth="7"/>
+      <circle cx="490" cy="210" r="6" fill={P}/><rect x="487" y="212" width="6" height="12" rx="3" fill={P}/>
+    </svg>);
+  if (kind === 'shop') return (
+    <svg viewBox="0 0 640 400" aria-hidden="true">
+      <rect x="40" y="40" width="560" height="320" rx="28" fill={W}/>
+      <rect x="40" y="40" width="560" height="56" rx="28" fill={P}/><rect x="40" y="70" width="560" height="26" fill={P}/>
+      <rect x="70" y="60" width="90" height="14" rx="7" fill={W}/><rect x="380" y="58" width="150" height="20" rx="10" fill="#8B70F5"/>
+      <circle cx="562" cy="68" r="14" fill={W}/><path d="M555 64h14l-2 8h-10z" fill={P}/>
+      {[0,1,2].map(k=><g key={k}>
+        <rect x={70+k*176} y="120" width="150" height="210" rx="20" fill="#F5F2FF"/>
+        <rect x={86+k*176} y="136" width="118" height="100" rx="14" fill={k===1?P2:'#E4DCFF'}/>
+        <path d={`M${145+k*176} 160c-22 10-26 40-4 54 22-14 18-44 4-54z`} fill={k===1?W:P}/>
+        <rect x={86+k*176} y="250" width="90" height="10" rx="5" fill={L}/><rect x={86+k*176} y="268" width="56" height="10" rx="5" fill={P}/>
+        <rect x={86+k*176} y="290" width="118" height="26" rx="10" fill={k===1?P:W}/>
+      </g>)}
+    </svg>);
   if (kind === 'nlp') return (
     <svg viewBox="0 0 640 400" aria-hidden="true">
       <rect x="40" y="40" width="340" height="320" rx="28" fill={W}/>
