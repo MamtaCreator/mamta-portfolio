@@ -43,8 +43,8 @@ export default function Hero() {
       <header className="wrap hero">
         <div>
           <span className="bar" />
-          <h1>i'm mamta yadav, an <span>agentic ai engineer</span></h1>
-          <p className="lede">Freelance website developer and AI engineer. I design and build fast business websites, AI agents and LLM apps that do real work, from .NET and React to cloud and lead automation.</p>
+          <h1>i'm mamta yadav, a <span>full stack ai engineer</span></h1>
+          <p className="lede">Full stack engineer and freelance website developer. I design and build fast business websites, AI agents and LLM apps that do real work, from .NET and React to cloud and lead automation.</p>
           <div className="cta-row">
             <a className="btn primary" href="#contact">contact me</a>
             <a className="btn ghost" href="#portfolio">browse portfolio</a>
