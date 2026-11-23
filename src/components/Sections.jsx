@@ -5,6 +5,8 @@ import event from '../assets/mamta-event.jpg';
 import cutout from '../assets/mamta-cutout.webp';
 
 const ext = { target: '_blank', rel: 'noopener noreferrer' };
+// rel="me" tells search engines these profiles belong to the site owner
+const me = { target: '_blank', rel: 'me noopener noreferrer' };
 const Head = ({ title, children }) => (
   <div className="head">
     <div><span className="bar" /><h2 className="h2">{title}</h2></div>
@@ -13,9 +15,9 @@ const Head = ({ title, children }) => (
 );
 const Socials = ({ wa }) => (
   <div className="socials">
-    <a className="soc" href={profile.github} {...ext} aria-label="GitHub"><GitHubIcon /></a>
-    <a className="soc" href={profile.linkedin} {...ext} aria-label="LinkedIn"><LinkedInIcon /></a>
-    <a className="soc" href={profile.medium} {...ext} aria-label="Medium"><MediumIcon /></a>
+    <a className="soc" href={profile.github} {...me} aria-label="GitHub"><GitHubIcon /></a>
+    <a className="soc" href={profile.linkedin} {...me} aria-label="LinkedIn"><LinkedInIcon /></a>
+    <a className="soc" href={profile.medium} {...me} aria-label="Medium"><MediumIcon /></a>
     {wa && <a className="soc wa" href={profile.whatsapp} {...ext} aria-label="WhatsApp"><WhatsAppIcon /></a>}
   </div>
 );
@@ -186,7 +188,7 @@ export const Articles = () => {
           </a>
         ))}
       </div>
-      <div className="center"><a className="btn ghost" href={profile.medium} {...ext}>read all on medium</a></div>
+      <div className="center"><a className="btn ghost" href={profile.medium} {...me}>read all on medium</a></div>
     </div></section>
   );
 };
@@ -208,8 +210,8 @@ export const Footer = () => (
         <li><a href="#portfolio">portfolio</a></li><li><a href="#about">about</a></li><li><a href="#experience">experience</a></li><li><a href="#articles">articles</a></li>
       </ul></div>
       <div><h5>connect</h5><ul>
-        <li><a href={profile.github} {...ext}>github</a></li><li><a href={profile.linkedin} {...ext}>linkedin</a></li>
-        <li><a href={profile.medium} {...ext}>medium</a></li><li><a href={profile.whatsapp} {...ext}>whatsapp</a></li>
+        <li><a href={profile.github} {...me}>github</a></li><li><a href={profile.linkedin} {...me}>linkedin</a></li>
+        <li><a href={profile.medium} {...me}>medium</a></li><li><a href={profile.whatsapp} {...ext}>whatsapp</a></li>
       </ul></div>
     </div>
     <div className="copy">copyright © {new Date().getFullYear()} mamta yadav · freelance website developer &amp; ai agent engineer</div>
